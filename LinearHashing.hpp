@@ -13,7 +13,7 @@
 class LinearHashing {
 private:
     int pagesize;
-    LinearHashingStats* LHStats = new LinearHashinStats();
+    LinearHashingStats* LHStats = nullptr;
 
 public:
     LinearHashing(int pagesize, int policy, int maxoverflow, float sizelimit);
