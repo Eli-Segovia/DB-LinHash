@@ -14,30 +14,30 @@ LinearHashingStats::LinearHashingStats(){
     this->_SplitCount = 0;
 }
 
-int LinearHashingStats::Count(){
+unsigned int LinearHashingStats::Count(){
     return this->_Count;
 }
 
-int LinearHashingStats::Buckets(){
+unsigned int LinearHashingStats::Buckets(){
     return this->_Buckets;
 }
 
-int LinearHashingStats::Pages(){
+unsigned int LinearHashingStats::Pages(){
     return this->_Pages;
 }
 
-int LinearHashingStats::OverflowBuckets(){
+unsigned int LinearHashingStats::OverflowBuckets(){
     return this->_OverflowBuckets;
 }
 
-int LinearHashingStats::Access(){
+unsigned int LinearHashingStats::Access(){
     return this->_Access;
 }
 
-int LinearHashingStats::AccessInsertOnly(){
+unsigned int LinearHashingStats::AccessInsertOnly(){
     return this->_AccessInsertOnly;
 }
 
-int LinearHashingStats::SplitCount(){
+unsigned int LinearHashingStats::SplitCount(){
     return this->_SplitCount;
 }

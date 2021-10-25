@@ -14,23 +14,23 @@ private:
      * The number of integers currently being stored
      * in the hashtable
      */
-    int _Count;
+    unsigned int _Count;
 
     /*
      * The number of buckets in the hash table
      */
-    int _Buckets;
+    unsigned int _Buckets;
 
     /*
      * the total number of pages in the hash table
      */
-    int _Pages;
+    unsigned int _Pages;
 
 private:
     /*
      * The total number of overflow buckets
      */
-    int _OverflowBuckets;
+    unsigned int _OverflowBuckets;
 
     /*
      * The number of pages (including overflow buckets)
@@ -38,19 +38,19 @@ private:
      * (read and write of the same page are considered
      * two accesses)
      */
-    int _Access;
+    unsigned int _Access;
 
 private:
 
     /*
      * Number of buckets accessed during insertion
      */
-    int _AccessInsertOnly;
+    unsigned int _AccessInsertOnly;
 
     /*
      * num of splits that have occured
      */
-    int _SplitCount;
+    unsigned int _SplitCount;
 
 
 
@@ -59,21 +59,22 @@ public:
     LinearHashingStats();
     /* basically just getters */
 
-    int Count();
+    unsigned int Count();
 
-    int Buckets();
+    unsigned int Buckets();
 
-    int Pages();
+    unsigned int Pages();
 
-    int OverflowBuckets();
+    unsigned int OverflowBuckets();
 
-    int Access();
+    unsigned int Access();
 
-    int AccessInsertOnly();
+    unsigned int AccessInsertOnly();
 
-    int SplitCount();
+    unsigned int SplitCount();
 
 
+    friend class LinearHashing;
 
 
 };
