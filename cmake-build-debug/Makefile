@@ -123,6 +123,33 @@ DB_LinHash/fast:
 	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/build
 .PHONY : DB_LinHash/fast
 
+LinearHashing.o: LinearHashing.cpp.o
+
+.PHONY : LinearHashing.o
+
+# target to build an object file
+LinearHashing.cpp.o:
+	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o
+.PHONY : LinearHashing.cpp.o
+
+LinearHashing.i: LinearHashing.cpp.i
+
+.PHONY : LinearHashing.i
+
+# target to preprocess a source file
+LinearHashing.cpp.i:
+	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.i
+.PHONY : LinearHashing.cpp.i
+
+LinearHashing.s: LinearHashing.cpp.s
+
+.PHONY : LinearHashing.s
+
+# target to generate assembly for a file
+LinearHashing.cpp.s:
+	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.s
+.PHONY : LinearHashing.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DB_LinHash"
 	@echo "... edit_cache"
+	@echo "... LinearHashing.o"
+	@echo "... LinearHashing.i"
+	@echo "... LinearHashing.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

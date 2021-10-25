@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashing.cpp">
+			<Option target="DB_LinHash"/>
+		</Unit>
+		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashing.hpp">
+			<Option target="DB_LinHash"/>
+		</Unit>
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/main.cpp">
 			<Option target="DB_LinHash"/>
 		</Unit>
