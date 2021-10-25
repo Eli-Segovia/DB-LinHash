@@ -150,6 +150,33 @@ LinearHashing.cpp.s:
 	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.s
 .PHONY : LinearHashing.cpp.s
 
+LinearHashingStats.o: LinearHashingStats.cpp.o
+
+.PHONY : LinearHashingStats.o
+
+# target to build an object file
+LinearHashingStats.cpp.o:
+	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o
+.PHONY : LinearHashingStats.cpp.o
+
+LinearHashingStats.i: LinearHashingStats.cpp.i
+
+.PHONY : LinearHashingStats.i
+
+# target to preprocess a source file
+LinearHashingStats.cpp.i:
+	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.i
+.PHONY : LinearHashingStats.cpp.i
+
+LinearHashingStats.s: LinearHashingStats.cpp.s
+
+.PHONY : LinearHashingStats.s
+
+# target to generate assembly for a file
+LinearHashingStats.cpp.s:
+	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.s
+.PHONY : LinearHashingStats.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... LinearHashing.o"
 	@echo "... LinearHashing.i"
 	@echo "... LinearHashing.s"
+	@echo "... LinearHashingStats.o"
+	@echo "... LinearHashingStats.i"
+	@echo "... LinearHashingStats.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

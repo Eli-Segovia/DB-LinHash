@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(DB_LinHash
         main.cpp
-        LinearHashing.cpp LinearHashing.hpp)
+        LinearHashing.cpp LinearHashing.hpp LinearHashingStats.cpp LinearHashingStats.hpp)
