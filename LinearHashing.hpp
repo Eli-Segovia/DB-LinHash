@@ -7,11 +7,13 @@
 
 #include <ostream>
 #include <vector>
+#include "LinearHashing.hpp"
 
 
 class LinearHashing {
 private:
     int pagesize;
+    LinearHashingStats* LHStats = new LinearHashinStats();
 
 public:
     LinearHashing(int pagesize, int policy, int maxoverflow, float sizelimit);
@@ -25,6 +27,8 @@ public:
     int Count();
 
     std::vector<int> ListBucket(int x);
+
+    LinearHashingStats GetStats();
 
 
 
