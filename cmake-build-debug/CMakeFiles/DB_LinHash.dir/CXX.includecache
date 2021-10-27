@@ -6,7 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashing.hpp
+ostream
+-
+vector
+-
+list
+-
+iostream
+-
+functional
+-
+exception
+-
+string
+-
+bitset
+-
+LinearHashingStats.hpp
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashingStats.hpp
+
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashingStats.hpp
+
 /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/main.cpp
 iostream
+-
+LinearHashing.hpp
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashing.hpp
+bitset
 -
 

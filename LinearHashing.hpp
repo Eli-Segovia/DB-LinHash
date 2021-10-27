@@ -7,16 +7,67 @@
 
 #include <ostream>
 #include <vector>
-#include "LinearHashing.hpp"
+#include <list>
+#include <iostream>
+#include <functional>
+#include <exception>
+#include <string>
+#include <bitset>
+#include "LinearHashingStats.hpp"
+
+
+struct LinearHashing_InvalidParameter : public std::exception {
+    const char * what () const throw () {
+        return "Error with the paramaters provided to LinearHashing constructor";
+    }
+};
 
 
 class LinearHashing {
+
+// private members
 private:
-    int pagesize;
-    LinearHashingStats* LHStats = nullptr;
+    unsigned int mod_factor;        // maintains level of hashtable
+
+
+    bool split_factor;         // flag to see if bucket is split
+
+    unsigned int next_split;   // tells what bucket is going to be split
+
+    unsigned int pageSize;     // bucket size
+
+    LinearHashingStats LHStats;                                        // object that stores some stats
+
+    std::vector< std::vector<int>* > Buckets;                          // the hash table itself
+
+    std::function<bool(LinearHashing&, int inserted_bucket)> Split;    // the function object to perform splits
+
+
+// private methods
+private:
+    bool split0(int bucket_idx);
+
+    bool split1(int bucket_idx);
+
+    bool split2(int bucket_idx);
+
+    bool split3(int bucket_idx);
+
+
+    void do_split();
+
+    int get_bucket_idx(int x) const;
+
+    void update_state();
+
+    void print_bin(std::ostream& os, int idx, bool is_split);
+
+
+
+
 
 public:
-    LinearHashing(int pagesize, int policy, int maxoverflow, float sizelimit);
+    LinearHashing(int pagesize, int policy = 0, int maxoverflow = 0, float sizelimit = 1.0f);
 
     bool Insert(int x);
 
