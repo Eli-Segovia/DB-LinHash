@@ -29,6 +29,8 @@ bool LinearHashing::Insert(int x) {
     bool has_split = this->Split(*this, bucket_idx);
     update_state();
 
+    this->LHStats._Count++;
+
     return has_split;
 }
 
@@ -57,30 +59,15 @@ void LinearHashing::Print(std::ostream& os) {
 }
 
 int LinearHashing::Count() {
-    return 2;
+    return LHStats.Count();
 }
 
 std::vector<int> LinearHashing::ListBucket(int x) {
-    std::vector<int>* curr_bucket = this->Buckets[x];
-
-    // dubugging
-//    for (int i = 0; i < curr_bucket->size(); ++i) {
-//        std::cout << curr_bucket->at(i);
-//        if(i < (curr_bucket->size() - 1)){
-//            std::cout << " ";
-//
-//        } else {
-//            std::cout << std::endl;
-//        }
-//    }
-
-
-
-    return *curr_bucket;
+    return *this->Buckets[x];
 }
 
 LinearHashingStats LinearHashing::GetStats() {
-    return * new LinearHashingStats();
+    return this->LHStats;
 }
 
 
@@ -107,7 +94,7 @@ void LinearHashing::print_bin(std::ostream& os, int idx, bool is_split) {
     std::vector<bool> bool_arr;
     if (idx < mod_factor / 2) {
         for (int i = 0; i < mod_factor / 4; i++){
-            os << "0";
+            os << "0"
         }
     }
     if(is_split) bool_arr.push_back(0);

@@ -18,7 +18,7 @@
 
 struct LinearHashing_InvalidParameter : public std::exception {
     const char * what () const throw () {
-        return "Error with the paramaters provided to LinearHashing constructor";
+        return "Error with the paramaters provided to LinearHashing";
     }
 };
 
@@ -27,8 +27,7 @@ class LinearHashing {
 
 // private members
 private:
-    unsigned int mod_factor;        // maintains level of hashtable
-
+    unsigned int mod_factor;   // maintains level of hashtable
 
     bool split_factor;         // flag to see if bucket is split
 
