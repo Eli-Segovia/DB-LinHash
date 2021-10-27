@@ -7,12 +7,11 @@
 
 #include <ostream>
 #include <vector>
-#include <list>
 #include <iostream>
+#include <math.h>
 #include <functional>
 #include <exception>
 #include <string>
-#include <bitset>
 #include "LinearHashingStats.hpp"
 
 

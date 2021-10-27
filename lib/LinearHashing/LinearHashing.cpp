@@ -39,7 +39,15 @@ bool LinearHashing::Insert(int x) {
 
 
 int LinearHashing::Search(int x) { /* TODO */
-    return 3;
+    auto curr_bucket = this->Buckets[this->get_bucket_idx(x)];
+    if (curr_bucket->size() == 0) return 0;
+
+    for(int i = 0; i < curr_bucket->size(); i++) {
+        if(curr_bucket->at(i) == x) {
+            return ceil((i + 1.0)/this->pageSize);
+        }
+    }
+    return 0 - ceil((curr_bucket->size()+0.0)/ this->pageSize);
 }
 
 
