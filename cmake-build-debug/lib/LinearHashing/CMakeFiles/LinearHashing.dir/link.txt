@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLinearHashing.a  CMakeFiles/LinearHashing.dir/LinearHashing.cpp.o CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o
+/usr/bin/ranlib libLinearHashing.a

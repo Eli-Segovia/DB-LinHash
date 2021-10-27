@@ -463,3 +463,31 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_da16c/fast && /usr/bin/make -f CMakeFiles/cmTC_da16c.dir/build.make CMakeFiles/cmTC_da16c.dir/build
+make[1]: Entering directory '/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da16c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_da16c.dir/CheckIncludeFile.c.o   -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_da16c
+/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da16c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_da16c.dir/CheckIncludeFile.c.o  -o cmTC_da16c 
+make[1]: Leaving directory '/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e520a/fast && /usr/bin/make -f CMakeFiles/cmTC_e520a.dir/build.make CMakeFiles/cmTC_e520a.dir/build
+make[1]: Entering directory '/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e520a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e520a.dir/CheckFunctionExists.c.o   -c /usr/local/lib/clion-2019.3.5/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e520a
+/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e520a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e520a.dir/CheckFunctionExists.c.o  -o cmTC_e520a -lpthread 
+make[1]: Leaving directory '/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+

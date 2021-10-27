@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.cpp
+LinearHashing.hpp
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.hpp
+
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.hpp
+ostream
+-
+vector
+-
+list
+-
+iostream
+-
+functional
+-
+exception
+-
+string
+-
+bitset
+-
+LinearHashingStats.hpp
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.hpp
+
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.hpp
+

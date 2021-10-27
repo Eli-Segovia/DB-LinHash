@@ -53,46 +53,315 @@ CMAKE_BINARY_DIR = /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/DB_LinHash.dir/all
+all: CMakeFiles/LinHash.dir/all
+all: googletest/all
+all: lib/LinearHashing/all
+all: test/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/DB_LinHash.dir/clean
+clean: CMakeFiles/LinHash.dir/clean
+clean: googletest/clean
+clean: lib/LinearHashing/clean
+clean: test/clean
 
 .PHONY : clean
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: googletest/preinstall
+preinstall: lib/LinearHashing/preinstall
+preinstall: test/preinstall
 
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/DB_LinHash.dir
+# Target rules for target CMakeFiles/LinHash.dir
 
 # All Build rule for target.
-CMakeFiles/DB_LinHash.dir/all:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/depend
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target DB_LinHash"
-.PHONY : CMakeFiles/DB_LinHash.dir/all
+CMakeFiles/LinHash.dir/all: lib/LinearHashing/CMakeFiles/LinearHashing.dir/all
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/depend
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LinHash"
+.PHONY : CMakeFiles/LinHash.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DB_LinHash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DB_LinHash.dir/all
+CMakeFiles/LinHash.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LinHash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/DB_LinHash.dir/rule
+.PHONY : CMakeFiles/LinHash.dir/rule
 
 # Convenience name for target.
-DB_LinHash: CMakeFiles/DB_LinHash.dir/rule
+LinHash: CMakeFiles/LinHash.dir/rule
 
-.PHONY : DB_LinHash
+.PHONY : LinHash
 
 # clean rule for target.
-CMakeFiles/DB_LinHash.dir/clean:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/clean
-.PHONY : CMakeFiles/DB_LinHash.dir/clean
+CMakeFiles/LinHash.dir/clean:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/clean
+.PHONY : CMakeFiles/LinHash.dir/clean
+
+#=============================================================================
+# Directory level rules for directory googletest
+
+# Recursive "all" directory target.
+googletest/all: googletest/googlemock/all
+
+.PHONY : googletest/all
+
+# Recursive "clean" directory target.
+googletest/clean: googletest/googlemock/clean
+
+.PHONY : googletest/clean
+
+# Recursive "preinstall" directory target.
+googletest/preinstall: googletest/googlemock/preinstall
+
+.PHONY : googletest/preinstall
+
+#=============================================================================
+# Directory level rules for directory googletest/googlemock
+
+# Recursive "all" directory target.
+googletest/googlemock/all: googletest/googlemock/CMakeFiles/gmock_main.dir/all
+googletest/googlemock/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/all: googletest/googletest/all
+
+.PHONY : googletest/googlemock/all
+
+# Recursive "clean" directory target.
+googletest/googlemock/clean: googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+googletest/googlemock/clean: googletest/googlemock/CMakeFiles/gmock.dir/clean
+googletest/googlemock/clean: googletest/googletest/clean
+
+.PHONY : googletest/googlemock/clean
+
+# Recursive "preinstall" directory target.
+googletest/googlemock/preinstall: googletest/googletest/preinstall
+
+.PHONY : googletest/googlemock/preinstall
+
+#=============================================================================
+# Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target gmock_main"
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+.PHONY : gmock_main
+
+# clean rule for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target gmock"
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+googletest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+#=============================================================================
+# Directory level rules for directory googletest/googletest
+
+# Recursive "all" directory target.
+googletest/googletest/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+googletest/googletest/all: googletest/googletest/CMakeFiles/gtest.dir/all
+
+.PHONY : googletest/googletest/all
+
+# Recursive "clean" directory target.
+googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/clean
+googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest.dir/clean
+
+.PHONY : googletest/googletest/clean
+
+# Recursive "preinstall" directory target.
+googletest/googletest/preinstall:
+
+.PHONY : googletest/googletest/preinstall
+
+#=============================================================================
+# Target rules for target googletest/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target gtest_main"
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+googletest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target gtest"
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: googletest/googletest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+googletest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Directory level rules for directory lib/LinearHashing
+
+# Recursive "all" directory target.
+lib/LinearHashing/all: lib/LinearHashing/CMakeFiles/LinearHashing.dir/all
+
+.PHONY : lib/LinearHashing/all
+
+# Recursive "clean" directory target.
+lib/LinearHashing/clean: lib/LinearHashing/CMakeFiles/LinearHashing.dir/clean
+
+.PHONY : lib/LinearHashing/clean
+
+# Recursive "preinstall" directory target.
+lib/LinearHashing/preinstall:
+
+.PHONY : lib/LinearHashing/preinstall
+
+#=============================================================================
+# Target rules for target lib/LinearHashing/CMakeFiles/LinearHashing.dir
+
+# All Build rule for target.
+lib/LinearHashing/CMakeFiles/LinearHashing.dir/all:
+	$(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/depend
+	$(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target LinearHashing"
+.PHONY : lib/LinearHashing/CMakeFiles/LinearHashing.dir/all
+
+# Build rule for subdir invocation for target.
+lib/LinearHashing/CMakeFiles/LinearHashing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 lib/LinearHashing/CMakeFiles/LinearHashing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 0
+.PHONY : lib/LinearHashing/CMakeFiles/LinearHashing.dir/rule
+
+# Convenience name for target.
+LinearHashing: lib/LinearHashing/CMakeFiles/LinearHashing.dir/rule
+
+.PHONY : LinearHashing
+
+# clean rule for target.
+lib/LinearHashing/CMakeFiles/LinearHashing.dir/clean:
+	$(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/clean
+.PHONY : lib/LinearHashing/CMakeFiles/LinearHashing.dir/clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Recursive "all" directory target.
+test/all: test/CMakeFiles/Tests.dir/all
+
+.PHONY : test/all
+
+# Recursive "clean" directory target.
+test/clean: test/CMakeFiles/Tests.dir/clean
+
+.PHONY : test/clean
+
+# Recursive "preinstall" directory target.
+test/preinstall:
+
+.PHONY : test/preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/Tests.dir
+
+# All Build rule for target.
+test/CMakeFiles/Tests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/Tests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+test/CMakeFiles/Tests.dir/all: lib/LinearHashing/CMakeFiles/LinearHashing.dir/all
+	$(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/depend
+	$(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target Tests"
+.PHONY : test/CMakeFiles/Tests.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/Tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles 0
+.PHONY : test/CMakeFiles/Tests.dir/rule
+
+# Convenience name for target.
+Tests: test/CMakeFiles/Tests.dir/rule
+
+.PHONY : Tests
+
+# clean rule for target.
+test/CMakeFiles/Tests.dir/clean:
+	$(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/clean
+.PHONY : test/CMakeFiles/Tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

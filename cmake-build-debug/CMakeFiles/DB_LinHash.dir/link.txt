@@ -1,1 +1,2 @@
-/usr/bin/c++  -g   CMakeFiles/DB_LinHash.dir/main.cpp.o CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o  -o DB_LinHash 
+/usr/bin/ar qc libDB_LinHash.a  CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o
+/usr/bin/ranlib libDB_LinHash.a

@@ -56,6 +56,51 @@ CMAKE_BINARY_DIR = /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +122,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,98 +168,122 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DB_LinHash
+# Target rules for targets named LinHash
 
 # Build rule for target.
-DB_LinHash: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DB_LinHash
-.PHONY : DB_LinHash
+LinHash: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LinHash
+.PHONY : LinHash
 
 # fast build rule for target.
-DB_LinHash/fast:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/build
-.PHONY : DB_LinHash/fast
+LinHash/fast:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/build
+.PHONY : LinHash/fast
 
-LinearHashing.o: LinearHashing.cpp.o
+#=============================================================================
+# Target rules for targets named gmock_main
 
-.PHONY : LinearHashing.o
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named LinearHashing
+
+# Build rule for target.
+LinearHashing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LinearHashing
+.PHONY : LinearHashing
+
+# fast build rule for target.
+LinearHashing/fast:
+	$(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/build
+.PHONY : LinearHashing/fast
+
+#=============================================================================
+# Target rules for targets named Tests
+
+# Build rule for target.
+Tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Tests
+.PHONY : Tests
+
+# fast build rule for target.
+Tests/fast:
+	$(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/build
+.PHONY : Tests/fast
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
 
 # target to build an object file
-LinearHashing.cpp.o:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o
-.PHONY : LinearHashing.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-LinearHashing.i: LinearHashing.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : LinearHashing.i
-
-# target to preprocess a source file
-LinearHashing.cpp.i:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.i
-.PHONY : LinearHashing.cpp.i
-
-LinearHashing.s: LinearHashing.cpp.s
-
-.PHONY : LinearHashing.s
-
-# target to generate assembly for a file
-LinearHashing.cpp.s:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.s
-.PHONY : LinearHashing.cpp.s
-
-LinearHashingStats.o: LinearHashingStats.cpp.o
-
-.PHONY : LinearHashingStats.o
-
-# target to build an object file
-LinearHashingStats.cpp.o:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o
-.PHONY : LinearHashingStats.cpp.o
-
-LinearHashingStats.i: LinearHashingStats.cpp.i
-
-.PHONY : LinearHashingStats.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-LinearHashingStats.cpp.i:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.i
-.PHONY : LinearHashingStats.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-LinearHashingStats.s: LinearHashingStats.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : LinearHashingStats.s
-
-# target to generate assembly for a file
-LinearHashingStats.cpp.s:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.s
-.PHONY : LinearHashingStats.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/DB_LinHash.dir/build.make CMakeFiles/DB_LinHash.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -210,18 +291,23 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... list_install_components"
+	@echo "... LinHash"
 	@echo "... rebuild_cache"
-	@echo "... DB_LinHash"
 	@echo "... edit_cache"
-	@echo "... LinearHashing.o"
-	@echo "... LinearHashing.i"
-	@echo "... LinearHashing.s"
-	@echo "... LinearHashingStats.o"
-	@echo "... LinearHashingStats.i"
-	@echo "... LinearHashingStats.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... install"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
+	@echo "... LinearHashing"
+	@echo "... Tests"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

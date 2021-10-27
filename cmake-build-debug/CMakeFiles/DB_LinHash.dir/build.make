@@ -57,64 +57,50 @@ include CMakeFiles/DB_LinHash.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DB_LinHash.dir/flags.make
 
-CMakeFiles/DB_LinHash.dir/main.cpp.o: CMakeFiles/DB_LinHash.dir/flags.make
-CMakeFiles/DB_LinHash.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DB_LinHash.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DB_LinHash.dir/main.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/main.cpp
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o: CMakeFiles/DB_LinHash.dir/flags.make
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o: ../lib/LinearHashing/LinearHashing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.cpp
 
-CMakeFiles/DB_LinHash.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB_LinHash.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/main.cpp > CMakeFiles/DB_LinHash.dir/main.cpp.i
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.cpp > CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.i
 
-CMakeFiles/DB_LinHash.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB_LinHash.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/main.cpp -o CMakeFiles/DB_LinHash.dir/main.cpp.s
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.cpp -o CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.s
 
-CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o: CMakeFiles/DB_LinHash.dir/flags.make
-CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o: ../LinearHashing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashing.cpp
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o: CMakeFiles/DB_LinHash.dir/flags.make
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o: ../lib/LinearHashing/LinearHashingStats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp
 
-CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashing.cpp > CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.i
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp > CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.i
 
-CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashing.cpp -o CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.s
-
-CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o: CMakeFiles/DB_LinHash.dir/flags.make
-CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o: ../LinearHashingStats.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashingStats.cpp
-
-CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashingStats.cpp > CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.i
-
-CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/LinearHashingStats.cpp -o CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.s
+CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp -o CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.s
 
 # Object files for target DB_LinHash
 DB_LinHash_OBJECTS = \
-"CMakeFiles/DB_LinHash.dir/main.cpp.o" \
-"CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o" \
-"CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o"
+"CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o" \
+"CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o"
 
 # External object files for target DB_LinHash
 DB_LinHash_EXTERNAL_OBJECTS =
 
-DB_LinHash: CMakeFiles/DB_LinHash.dir/main.cpp.o
-DB_LinHash: CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o
-DB_LinHash: CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o
-DB_LinHash: CMakeFiles/DB_LinHash.dir/build.make
-DB_LinHash: CMakeFiles/DB_LinHash.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DB_LinHash"
+libDB_LinHash.a: CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o
+libDB_LinHash.a: CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o
+libDB_LinHash.a: CMakeFiles/DB_LinHash.dir/build.make
+libDB_LinHash.a: CMakeFiles/DB_LinHash.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libDB_LinHash.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/DB_LinHash.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DB_LinHash.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/DB_LinHash.dir/build: DB_LinHash
+CMakeFiles/DB_LinHash.dir/build: libDB_LinHash.a
 
 .PHONY : CMakeFiles/DB_LinHash.dir/build
 

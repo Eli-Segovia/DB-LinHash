@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DB_LinHash.dir/LinearHashing.cpp.o"
-  "CMakeFiles/DB_LinHash.dir/LinearHashingStats.cpp.o"
-  "CMakeFiles/DB_LinHash.dir/main.cpp.o"
-  "DB_LinHash"
-  "DB_LinHash.pdb"
+  "CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashing.cpp.o"
+  "CMakeFiles/DB_LinHash.dir/lib/LinearHashing/LinearHashingStats.cpp.o"
+  "libDB_LinHash.a"
+  "libDB_LinHash.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
