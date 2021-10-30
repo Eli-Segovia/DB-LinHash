@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/EXECUTE_TESTS.dir/Counting.cpp.o  -o EXECUTE_TESTS ../lib/LinearHashing/libLinearHashing.a ../lib/libgtestd.a ../lib/libgtest_maind.a ../lib/libgtestd.a -lpthread 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/TESTS.dir/Counting.cpp.o  -o TESTS -lLinearHashing -lgtest -lgtest_main 

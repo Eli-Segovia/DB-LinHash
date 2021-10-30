@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LinHash.dir/src/main.cpp.o"
   "CMakeFiles/LinHash.dir/test/Counting.cpp.o"
   "LinHash"
   "LinHash.pdb"

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/DO.dir/Counting.cpp.o  -o DO 

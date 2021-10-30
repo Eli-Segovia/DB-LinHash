@@ -1,6 +1,5 @@
 #include <iostream>
 #include "../lib/LinearHashing/LinearHashing.h"
-#include <gtest/gtest.h>
 
 int main () {
         LinearHashing lh(3, 2, 1,.75f);

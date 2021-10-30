@@ -9,18 +9,14 @@ set(SOURCES Counting.cpp)
 
 add_executable(${this} ${SOURCES})
 
+include(GoogleTest)
+
 # Link gtest libraries
-target_link_libraries(${this}
+target_link_libraries(${PROJECT_NAME}
         LinearHashing
         gtest
         gtest_main)
 
 
-include(GoogleTest)
 
 gtest_discover_tests(${this})
-
-add_test(
-        NAME ${this}
-        COMMAND ${this}
-)

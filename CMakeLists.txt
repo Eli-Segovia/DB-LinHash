@@ -14,7 +14,12 @@ file(GLOB TESTING_SOURCES
         "test/*.cpp"
         )
 
-add_executable(${PROJECT_NAME} src/main.cpp ${TESTING_SOURCES})
+add_executable(${PROJECT_NAME} ${TESTING_SOURCES})
+
+add_executable(main src/main.cpp)
+
+target_link_libraries(main
+        LinearHashing)
 
 target_link_libraries(${PROJECT_NAME}
         LinearHashing
