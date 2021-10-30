@@ -2,7 +2,7 @@
 // Created by Eli Segovia on 10/25/21.
 //
 
-#include "LinearHashingStats.hpp"
+#include "LinearHashingStats.h"
 
 LinearHashingStats::LinearHashingStats(){
     this->_Count = 0;

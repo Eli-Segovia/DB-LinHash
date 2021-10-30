@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/R.dir/Counting.cpp.o  -o R 

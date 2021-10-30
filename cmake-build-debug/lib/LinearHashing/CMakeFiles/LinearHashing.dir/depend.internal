@@ -3,8 +3,8 @@
 
 lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashing.cpp.o
  /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.cpp
- /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.hpp
- /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.hpp
+ /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.h
+ /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.h
 lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o
  /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp
- /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.hpp
+ /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.h

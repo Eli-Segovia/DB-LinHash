@@ -245,19 +245,6 @@ LinearHashing/fast:
 	$(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/build
 .PHONY : LinearHashing/fast
 
-#=============================================================================
-# Target rules for targets named Tests
-
-# Build rule for target.
-Tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Tests
-.PHONY : Tests
-
-# fast build rule for target.
-Tests/fast:
-	$(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/build
-.PHONY : Tests/fast
-
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -285,6 +272,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+test/Counting.o: test/Counting.cpp.o
+
+.PHONY : test/Counting.o
+
+# target to build an object file
+test/Counting.cpp.o:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/test/Counting.cpp.o
+.PHONY : test/Counting.cpp.o
+
+test/Counting.i: test/Counting.cpp.i
+
+.PHONY : test/Counting.i
+
+# target to preprocess a source file
+test/Counting.cpp.i:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/test/Counting.cpp.i
+.PHONY : test/Counting.cpp.i
+
+test/Counting.s: test/Counting.cpp.s
+
+.PHONY : test/Counting.s
+
+# target to generate assembly for a file
+test/Counting.cpp.s:
+	$(MAKE) -f CMakeFiles/LinHash.dir/build.make CMakeFiles/LinHash.dir/test/Counting.cpp.s
+.PHONY : test/Counting.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -304,10 +318,12 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... LinearHashing"
-	@echo "... Tests"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... test/Counting.o"
+	@echo "... test/Counting.i"
+	@echo "... test/Counting.s"
 .PHONY : help
 
 

@@ -6,4 +6,3 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("googletest")
 subdirs("lib/LinearHashing")
-subdirs("test")

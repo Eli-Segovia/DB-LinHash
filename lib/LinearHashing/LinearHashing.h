@@ -12,7 +12,7 @@
 #include <functional>
 #include <exception>
 #include <string>
-#include "LinearHashingStats.hpp"
+#include "LinearHashingStats.h"
 
 
 struct LinearHashing_InvalidParameter : public std::exception {

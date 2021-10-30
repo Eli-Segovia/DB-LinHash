@@ -5,7 +5,7 @@
 		<Option title="googletest-distribution"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\googletest\;CMake Files\googletest\googlemock\;CMake Files\googletest\googlemock\cmake\;CMake Files\googletest\googletest\;CMake Files\googletest\googletest\cmake\;CMake Files\lib\;CMake Files\lib\LinearHashing\;CMake Files\test\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\googletest\;CMake Files\googletest\googlemock\;CMake Files\googletest\googlemock\cmake\;CMake Files\googletest\googletest\;CMake Files\googletest\googletest\cmake\;CMake Files\lib\;CMake Files\lib\LinearHashing\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/googletest"/>
@@ -270,9 +270,6 @@
 		</Unit>
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\LinearHashing\"/>
-		</Unit>
-		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

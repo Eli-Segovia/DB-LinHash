@@ -10,12 +10,16 @@ enable_testing()
 add_subdirectory(googletest)
 add_subdirectory(lib/LinearHashing)
 
-add_executable(${PROJECT_NAME} src/main.cpp)
+file(GLOB TESTING_SOURCES
+        "test/*.cpp"
+        )
+
+add_executable(${PROJECT_NAME} src/main.cpp ${TESTING_SOURCES})
 
 target_link_libraries(${PROJECT_NAME}
-        LinearHashing)
+        LinearHashing
+        gtest_main)
 
-add_subdirectory(test)
 
 
 

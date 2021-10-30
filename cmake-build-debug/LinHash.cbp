@@ -5,7 +5,7 @@
 		<Option title="LinHash"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\googletest\;CMake Files\googletest\googlemock\;CMake Files\googletest\googlemock\cmake\;CMake Files\googletest\googletest\;CMake Files\googletest\googletest\cmake\;CMake Files\lib\;CMake Files\lib\LinearHashing\;CMake Files\test\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\googletest\;CMake Files\googletest\googlemock\;CMake Files\googletest\googlemock\cmake\;CMake Files\googletest\googletest\;CMake Files\googletest\googletest\cmake\;CMake Files\lib\;CMake Files\lib\LinearHashing\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug"/>
@@ -64,6 +64,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest/include"/>
+					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -87,6 +89,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest/include"/>
+					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -387,56 +391,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Tests">
-				<Option output="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest/include"/>
-					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 Tests"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Tests/fast">
-				<Option output="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest/include"/>
-					<Add directory="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 Tests/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock"/>
@@ -453,20 +407,20 @@
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.cpp">
 			<Option target="LinearHashing"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.hpp">
+		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.h">
 			<Option target="LinearHashing"/>
 		</Unit>
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp">
 			<Option target="LinearHashing"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.hpp">
+		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.h">
 			<Option target="LinearHashing"/>
 		</Unit>
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/src/main.cpp">
 			<Option target="LinHash"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/LinearHashTests.cpp">
-			<Option target="Tests"/>
+		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/Counting.cpp">
+			<Option target="LinHash"/>
 		</Unit>
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -500,9 +454,6 @@
 		</Unit>
 		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\LinearHashing\"/>
-		</Unit>
-		<Unit filename="/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

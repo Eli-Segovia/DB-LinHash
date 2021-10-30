@@ -39,11 +39,3 @@
 /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing/CMakeFiles/edit_cache.dir
 /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing/CMakeFiles/rebuild_cache.dir
 /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing/CMakeFiles/install.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/install/strip.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/install/local.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/test.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/list_install_components.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/Tests.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/edit_cache.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/CMakeFiles/install.dir

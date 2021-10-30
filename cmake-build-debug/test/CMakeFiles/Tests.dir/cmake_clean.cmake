@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Tests.dir/LinearHashTests.cpp.o"
-  "Tests"
-  "Tests.pdb"
-  "Tests[1]_tests.cmake"
+  "CMakeFiles/Tests.dir/Counting.cpp.o"
+  "libTests.a"
+  "libTests.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

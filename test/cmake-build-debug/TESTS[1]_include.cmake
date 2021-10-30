@@ -1,0 +1,5 @@
+if(EXISTS "/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/cmake-build-debug/TESTS[1]_tests.cmake")
+  include("/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/cmake-build-debug/TESTS[1]_tests.cmake")
+else()
+  add_test(TESTS_NOT_BUILT TESTS_NOT_BUILT)
+endif()

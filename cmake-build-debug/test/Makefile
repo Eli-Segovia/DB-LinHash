@@ -182,32 +182,32 @@ Tests/fast:
 	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/build
 .PHONY : Tests/fast
 
-LinearHashTests.o: LinearHashTests.cpp.o
+Counting.o: Counting.cpp.o
 
-.PHONY : LinearHashTests.o
+.PHONY : Counting.o
 
 # target to build an object file
-LinearHashTests.cpp.o:
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/LinearHashTests.cpp.o
-.PHONY : LinearHashTests.cpp.o
+Counting.cpp.o:
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/Counting.cpp.o
+.PHONY : Counting.cpp.o
 
-LinearHashTests.i: LinearHashTests.cpp.i
+Counting.i: Counting.cpp.i
 
-.PHONY : LinearHashTests.i
+.PHONY : Counting.i
 
 # target to preprocess a source file
-LinearHashTests.cpp.i:
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/LinearHashTests.cpp.i
-.PHONY : LinearHashTests.cpp.i
+Counting.cpp.i:
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/Counting.cpp.i
+.PHONY : Counting.cpp.i
 
-LinearHashTests.s: LinearHashTests.cpp.s
+Counting.s: Counting.cpp.s
 
-.PHONY : LinearHashTests.s
+.PHONY : Counting.s
 
 # target to generate assembly for a file
-LinearHashTests.cpp.s:
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/LinearHashTests.cpp.s
-.PHONY : LinearHashTests.cpp.s
+Counting.cpp.s:
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f test/CMakeFiles/Tests.dir/build.make test/CMakeFiles/Tests.dir/Counting.cpp.s
+.PHONY : Counting.cpp.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... LinearHashTests.o"
-	@echo "... LinearHashTests.i"
-	@echo "... LinearHashTests.s"
+	@echo "... Counting.o"
+	@echo "... Counting.i"
+	@echo "... Counting.s"
 .PHONY : help
 
 

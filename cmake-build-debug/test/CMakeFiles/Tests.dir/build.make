@@ -57,39 +57,35 @@ include test/CMakeFiles/Tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/Tests.dir/flags.make
 
-test/CMakeFiles/Tests.dir/LinearHashTests.cpp.o: test/CMakeFiles/Tests.dir/flags.make
-test/CMakeFiles/Tests.dir/LinearHashTests.cpp.o: ../test/LinearHashTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/Tests.dir/LinearHashTests.cpp.o"
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tests.dir/LinearHashTests.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/LinearHashTests.cpp
+test/CMakeFiles/Tests.dir/Counting.cpp.o: test/CMakeFiles/Tests.dir/flags.make
+test/CMakeFiles/Tests.dir/Counting.cpp.o: ../test/Counting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/Tests.dir/Counting.cpp.o"
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tests.dir/Counting.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/Counting.cpp
 
-test/CMakeFiles/Tests.dir/LinearHashTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tests.dir/LinearHashTests.cpp.i"
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/LinearHashTests.cpp > CMakeFiles/Tests.dir/LinearHashTests.cpp.i
+test/CMakeFiles/Tests.dir/Counting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tests.dir/Counting.cpp.i"
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/Counting.cpp > CMakeFiles/Tests.dir/Counting.cpp.i
 
-test/CMakeFiles/Tests.dir/LinearHashTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tests.dir/LinearHashTests.cpp.s"
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/LinearHashTests.cpp -o CMakeFiles/Tests.dir/LinearHashTests.cpp.s
+test/CMakeFiles/Tests.dir/Counting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tests.dir/Counting.cpp.s"
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/Counting.cpp -o CMakeFiles/Tests.dir/Counting.cpp.s
 
 # Object files for target Tests
 Tests_OBJECTS = \
-"CMakeFiles/Tests.dir/LinearHashTests.cpp.o"
+"CMakeFiles/Tests.dir/Counting.cpp.o"
 
 # External object files for target Tests
 Tests_EXTERNAL_OBJECTS =
 
-test/Tests: test/CMakeFiles/Tests.dir/LinearHashTests.cpp.o
-test/Tests: test/CMakeFiles/Tests.dir/build.make
-test/Tests: lib/LinearHashing/libLinearHashing.a
-test/Tests: lib/libgtestd.a
-test/Tests: lib/libgtest_maind.a
-test/Tests: lib/libgtestd.a
-test/Tests: test/CMakeFiles/Tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Tests"
+test/libTests.a: test/CMakeFiles/Tests.dir/Counting.cpp.o
+test/libTests.a: test/CMakeFiles/Tests.dir/build.make
+test/libTests.a: test/CMakeFiles/Tests.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libTests.a"
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/Tests.dir/cmake_clean_target.cmake
 	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tests.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test && /usr/local/lib/clion-2019.3.5/bin/cmake/linux/bin/cmake -D TEST_TARGET=Tests -D TEST_EXECUTABLE=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=Tests_TESTS -D CTEST_FILE=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test/Tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -P /usr/local/lib/clion-2019.3.5/bin/cmake/linux/share/cmake-3.15/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
-test/CMakeFiles/Tests.dir/build: test/Tests
+test/CMakeFiles/Tests.dir/build: test/libTests.a
 
 .PHONY : test/CMakeFiles/Tests.dir/build
 

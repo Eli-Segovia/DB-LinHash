@@ -15,10 +15,10 @@
 ########################
 
 //Value Computed by CMake
-$_BINARY_DIR:STATIC=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug
+$_BINARY_DIR:STATIC=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test
 
 //Value Computed by CMake
-$_SOURCE_DIR:STATIC=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash
+$_SOURCE_DIR:STATIC=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test
 
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
@@ -316,6 +316,12 @@ ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 Python_EXECUTABLE:FILEPATH=/usr/bin/python3.7
 
 //Value Computed by CMake
+Tests_BINARY_DIR:STATIC=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/test
+
+//Value Computed by CMake
+Tests_SOURCE_DIR:STATIC=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/googletest/googlemock
 
 //Dependencies for the target
@@ -510,7 +516,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

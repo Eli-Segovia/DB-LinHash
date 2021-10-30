@@ -2,7 +2,7 @@
 // Created by Eli Segovia on 10/25/21.
 //
 
-#include "LinearHashing.hpp"
+#include "LinearHashing.h"
 
 
 LinearHashing::LinearHashing(int pagesize, int policy, int maxoverflow , float sizelimit)
@@ -40,6 +40,7 @@ bool LinearHashing::Insert(int x) {
 
     this->LHStats._Count++;
     this->LHStats._Pages = std::ceil((this->LHStats.Count() + 0.0) / this->pageSize);
+
     update_bucket_state();
     bool has_split = this->Split(*this, bucket_idx);
     update_state();
@@ -132,13 +133,13 @@ void LinearHashing::update_state() {
 
 
 void LinearHashing::update_bucket_state() {
-    this->LHStats._Buckets = ceil((this->LHStats.Count()+0.0) / pageSize);
     this->LHStats._OverflowBuckets = 0;
     for (auto bucket : this->Buckets) {
         if (bucket->size() > pageSize) {
             this->LHStats._OverflowBuckets += ceil((double)(bucket->size() - pageSize) / pageSize);
         }
     }
+    this->LHStats._Buckets = this->Buckets.size() + this->LHStats._OverflowBuckets;
 }
 
 
@@ -228,7 +229,6 @@ bool LinearHashing::split2(int bucket_idx) {
 
     const int limit = floor(this->sizelimit * capacity);           // limit is floor of sizeLimit provided * capacity
                                                                      // ex. .75 * 6 => floor(4.5) = 4
-
     if (this->LHStats.Count() > limit) {
         do_split();
     }

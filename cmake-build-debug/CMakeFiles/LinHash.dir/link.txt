@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/LinHash.dir/src/main.cpp.o  -o LinHash lib/LinearHashing/libLinearHashing.a 
+/usr/bin/c++  -g   CMakeFiles/LinHash.dir/src/main.cpp.o CMakeFiles/LinHash.dir/test/Counting.cpp.o  -o LinHash lib/LinearHashing/libLinearHashing.a lib/libgtest_maind.a lib/libgtestd.a -lpthread 

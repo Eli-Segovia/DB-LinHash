@@ -1,0 +1,1 @@
+set( LinHash_TESTS)

@@ -1,21 +1,26 @@
 cmake_minimum_required(VERSION 3.15)
+enable_testing()
 
-set (This Tests)
+set(this TESTS)
+project(${this})
 
-set(Sources LinearHashTests.cpp)
+# finds all .cpp files under this directory (./test) and add them to executable
+set(SOURCES Counting.cpp)
 
+add_executable(${this} ${SOURCES})
 
-add_executable(${This} ${Sources})
-
-target_link_libraries(${This}
+# Link gtest libraries
+target_link_libraries(${this}
         LinearHashing
         gtest
         gtest_main)
 
+
 include(GoogleTest)
-gtest_discover_tests(${This})
+
+gtest_discover_tests(${this})
 
 add_test(
-        NAME ${This}
-        COMMAND ${This}
+        NAME ${this}
+        COMMAND ${this}
 )
