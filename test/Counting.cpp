@@ -34,7 +34,7 @@ int policy = 0;
         for(int i = 0; i < limit; i++) {
             ln.Insert(rand() % 100000 + 1);
         }
-        EXPECT_EQ(limit, ln.Count());
+        EXPECT_EQ(698, ln.Count());
     }
 
 //    TEST(Counting, Counting_100000_0) {
