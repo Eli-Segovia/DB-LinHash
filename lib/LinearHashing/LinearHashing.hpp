@@ -34,6 +34,10 @@ private:
 
     unsigned int pageSize;     // bucket size
 
+    unsigned int maxoverflow;
+
+    float sizelimit;
+
     LinearHashingStats LHStats;                                        // object that stores some stats
 
     std::vector< std::vector<int>* > Buckets;                          // the hash table itself
@@ -57,6 +61,8 @@ private:
     int get_bucket_idx(int x) const;
 
     void update_state();
+
+    void update_bucket_state();
 
     void print_bin(std::ostream& os, int idx, bool is_split);
 
