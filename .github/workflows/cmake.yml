@@ -25,6 +25,8 @@ jobs:
       run: mkdir build && cmake -S . -B build
     - name: Build
       run: cd build && make
+    - name: Look At Stuff
+      run: ls -al
     - name: Run Test
       run: /home/runner/work/DB-LinHash/DB-LinHash/build/test/Tests
       
