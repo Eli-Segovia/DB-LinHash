@@ -28,5 +28,5 @@ jobs:
     - name: Look At Stuff
       run: ls -al ./build
     - name: Run Test
-      run: /home/runner/work/DB-LinHash/DB-LinHash/build/test/Tests
+      run: /home/runner/work/DB-LinHash/DB-LinHash/build/LinHash
       
