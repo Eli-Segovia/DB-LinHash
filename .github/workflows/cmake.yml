@@ -21,12 +21,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    # CMake sources
     - name: Configure
       run: mkdir build && cmake -S . -B build
+    # Make
     - name: Build
       run: cd build && make
-    - name: Look At Stuff
-      run: ls -al ./build
+    # Run Tests
     - name: Run Test
-      run: /home/runner/work/DB-LinHash/DB-LinHash/build/LinHash
+      run: /home/runner/work/DB-LinHash/DB-LinHash/build/LinHash.test
       

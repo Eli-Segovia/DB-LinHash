@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIE   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest/include -isystem /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/googletest/googletest 
+CXX_INCLUDES = 
 
