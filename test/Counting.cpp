@@ -81,7 +81,7 @@ TEST(Counting, Counting_1000_1) {
 TEST(Counting, Counting_10000_1) {
     const int limit = 10000;
 
-    LinearHashing ln(h.pageSize,h.pageSize);
+    LinearHashing ln(h.pageSize,h.policy);
     for(int i = 0; i < limit; i++) {
         ln.Insert(rand() % 100000 + 1);
     }
