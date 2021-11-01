@@ -5,10 +5,9 @@ set(this TESTS)
 project(${this})
 
 # finds all .cpp files under this directory (./test) and add them to executable
-set(SOURCES Counting.cpp)
+set(SOURCES Counting.cpp ErrorHandling.cpp)
 
 add_executable(${this} ${SOURCES})
-
 include(GoogleTest)
 
 # Link gtest libraries

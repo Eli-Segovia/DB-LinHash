@@ -352,7 +352,7 @@ LinearHashingStats.h
 
 /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.h
 
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/Counting.cpp
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/test/ErrorHandling.cpp
 gtest/gtest.h
 -
 ../lib/LinearHashing/LinearHashing.h

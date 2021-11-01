@@ -312,6 +312,33 @@ test/Counting.cpp.s:
 	$(MAKE) -f CMakeFiles/LinHash.test.dir/build.make CMakeFiles/LinHash.test.dir/test/Counting.cpp.s
 .PHONY : test/Counting.cpp.s
 
+test/ErrorHandling.o: test/ErrorHandling.cpp.o
+
+.PHONY : test/ErrorHandling.o
+
+# target to build an object file
+test/ErrorHandling.cpp.o:
+	$(MAKE) -f CMakeFiles/LinHash.test.dir/build.make CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o
+.PHONY : test/ErrorHandling.cpp.o
+
+test/ErrorHandling.i: test/ErrorHandling.cpp.i
+
+.PHONY : test/ErrorHandling.i
+
+# target to preprocess a source file
+test/ErrorHandling.cpp.i:
+	$(MAKE) -f CMakeFiles/LinHash.test.dir/build.make CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.i
+.PHONY : test/ErrorHandling.cpp.i
+
+test/ErrorHandling.s: test/ErrorHandling.cpp.s
+
+.PHONY : test/ErrorHandling.s
+
+# target to generate assembly for a file
+test/ErrorHandling.cpp.s:
+	$(MAKE) -f CMakeFiles/LinHash.test.dir/build.make CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.s
+.PHONY : test/ErrorHandling.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -338,6 +365,9 @@ help:
 	@echo "... test/Counting.o"
 	@echo "... test/Counting.i"
 	@echo "... test/Counting.s"
+	@echo "... test/ErrorHandling.o"
+	@echo "... test/ErrorHandling.i"
+	@echo "... test/ErrorHandling.s"
 .PHONY : help
 
 
