@@ -2,7 +2,7 @@
 #include "../lib/LinearHashing/lh.h"
 
 int main () {
-        lh lh(5, 1);
+        LinearHashing lh(5, 1);
 
         for(int i = 0; i < 16; i++) {
             lh.Insert(rand() % 1000000 + 1);
