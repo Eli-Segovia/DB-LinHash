@@ -6,7 +6,7 @@
 
 
 LinearHashing::LinearHashing(int pagesize, int policy, int maxoverflow , float sizelimit)
-    : LHStats(), Buckets(1), mod_factor(1), next_split(0), split_factor(0) {
+    : LHStats(), Buckets(1), mod_factor(1), next_split(0), split_factor(0), level(0){
 
     this->maxoverflow = maxoverflow;
     this->sizelimit   = sizelimit;
@@ -67,7 +67,6 @@ int LinearHashing::Search(int x) {
 
 void LinearHashing::Print(std::ostream& os) {
     const int split_buckets = this->Buckets.size() - (this->mod_factor);
-    const int level = this->mod_factor / 2;
     int pg_cnt = 0;
     for (int i = 0; i < this->Buckets.size(); i++) {
         print_bin(os, i,i < split_buckets);
@@ -83,10 +82,11 @@ void LinearHashing::Print(std::ostream& os) {
         os << std::endl;
 
     }
-    os << "level: " << level << std::endl;
+    os << "level: " << this->level << std::endl;
     os << "ptr: ";
     print_bin(os, this->next_split, this->next_split < split_buckets);
     os << std::endl;
+    os << mod_factor << " is the mod factor" << std::endl;
 
 }
 
@@ -125,6 +125,7 @@ int LinearHashing::get_bucket_idx(int x) const {
 void LinearHashing::update_state() {
     if (this->mod_factor * 2 == this->Buckets.size()) {
         this->mod_factor *= 2;
+        this->level++;
         this->split_factor = 0;
         this->next_split = 0;
     }
@@ -146,17 +147,19 @@ void LinearHashing::update_bucket_state() {
 
 void LinearHashing::print_bin(std::ostream& os, int idx, bool is_split) {
     std::vector<bool> bool_arr;
-    if (idx < mod_factor / 2) {
-        for (int i = 0; i < mod_factor / 4; i++){
-            os << "0";
-        }
-    }
-    if(is_split) os << "0";
+
+    // convert to bin
     do {
         bool_arr.push_back(idx % 2);
         idx = idx / 2;
     } while (idx != 0);
 
+    // fill to the level
+    for (int i = bool_arr.size(); i < this->level; i++) os << "0";
+
+    if(is_split) os << "0"; // fill if it is split
+
+    // print the bin val
     for (int i = bool_arr.size() - 1; i >=0; i--){
         os << bool_arr[i];
     }
@@ -165,7 +168,6 @@ void LinearHashing::print_bin(std::ostream& os, int idx, bool is_split) {
 
 
 void LinearHashing::do_split() {
-//    std::cout << " a split has occurred" << std::endl;
     if (!this->split_factor) {       // set split flag to 1
         this->split_factor = 1;
     }
@@ -214,7 +216,7 @@ bool LinearHashing::split0(int bucket_idx) {
 
 bool LinearHashing::split1(int bucket_idx) {
 
-    if (this->LHStats.OverflowBuckets() >= this->maxoverflow) {    // if overflow buckets exceeds provided value, split
+    if (this->LHStats.OverflowBuckets() != 0 &&  this->LHStats.OverflowBuckets() >= this->maxoverflow) {    // if overflow buckets exceeds provided value, split
         do_split();
     }
 

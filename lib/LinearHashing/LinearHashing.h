@@ -28,6 +28,8 @@ class LinearHashing {
 private:
     unsigned int mod_factor;   // maintains level of hashtable
 
+    unsigned int level;
+
     bool split_factor;         // flag to see if bucket is split
 
     unsigned int next_split;   // tells what bucket is going to be split
