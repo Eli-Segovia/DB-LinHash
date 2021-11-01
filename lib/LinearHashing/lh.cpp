@@ -2,7 +2,7 @@
 // Created by Eli Segovia on 10/25/21.
 //
 
-#include "LinearHashing.h"
+#include "lh.h"
 
 
 LinearHashing::LinearHashing(int pagesize, int policy, int maxoverflow , float sizelimit)
@@ -13,6 +13,7 @@ LinearHashing::LinearHashing(int pagesize, int policy, int maxoverflow , float s
 
     this->LHStats._Buckets = this->Buckets.size();
 
+    // set Split function depending on what policy we have. If invalid parameters, then we throw a custom error msg
     this->pageSize = pagesize > 0? pagesize : throw LinearHashing_InvalidParameter();
     switch (policy) {
         case 0 : this->Split = &LinearHashing::split0;
@@ -31,8 +32,11 @@ LinearHashing::LinearHashing(int pagesize, int policy, int maxoverflow , float s
 
 
 bool LinearHashing::Insert(int x) {
+
+    // get the corresponding bucket index of the inserted value.
     const int bucket_idx = get_bucket_idx(x);
 
+    // push the value into the corresponding bucket
     this->Buckets[bucket_idx]->push_back(x);
 
     this->LHStats._AccessInsertOnly += 2; // read and write to the inserted bucket...
@@ -41,38 +45,59 @@ bool LinearHashing::Insert(int x) {
     this->LHStats._Count++;
     this->LHStats._Pages = std::ceil((this->LHStats.Count() + 0.0) / this->pageSize);
 
+    // update the bucket states to work with.
     update_bucket_state();
-    bool has_split = this->Split(*this, bucket_idx);
-    update_state();
 
+    // do the split
+    bool has_split = this->Split(*this, bucket_idx);
+
+    //update the state of hash table.
+    update_state();
 
     return has_split;
 }
 
 
 int LinearHashing::Search(int x) {
+
+    // get the bucket that the value should be inside.
     auto curr_bucket = this->Buckets[this->get_bucket_idx(x)];
+
     this->LHStats._Access++;    // read bucket
 
+    // if empty, return 0.
     if (curr_bucket->size() == 0) return 0;
 
+    // go through the bucket and overflow buckets. if found, return count of pages accessed.
     for(int i = 0; i < curr_bucket->size(); i++) {
         if(curr_bucket->at(i) == x) {
             return ceil((i + 1.0)/this->pageSize);
         }
     }
+    // if we never find it, that means we accessed all the pages in the bucket idx location.
+    // therefore, we simply return the negation of that.
     return 0 - ceil((curr_bucket->size()+0.0)/ this->pageSize);
 }
 
 
 void LinearHashing::Print(std::ostream& os) {
+    // get the total count of split buckets.
     const int split_buckets = this->Buckets.size() - (this->mod_factor);
-    int pg_cnt = 0;
+
+    // go through the hashtable of buckets
     for (int i = 0; i < this->Buckets.size(); i++) {
+
+        // print the index in binary form.
         print_bin(os, i,i < split_buckets);
         os << ": ";
+
+        // go through each bucket and overflow bucket in the index.
         for (int j = 0; j < this->Buckets.at(i)->size(); j++) {
+
+            // print the value.
             os << this->Buckets.at(i)->at(j);
+
+            // print a dash if it's the end of the bucket.
             if (j % pageSize == pageSize - 1 && j != this->Buckets.at(i)->size() - 1) {
                 os << " - ";
             }
@@ -82,12 +107,12 @@ void LinearHashing::Print(std::ostream& os) {
         os << std::endl;
 
     }
+
+    // other stuff...
     os << "level: " << this->level << std::endl;
     os << "ptr: ";
     print_bin(os, this->next_split, this->next_split < split_buckets);
     os << std::endl;
-    os << mod_factor << " is the mod factor" << std::endl;
-
 }
 
 
@@ -110,6 +135,10 @@ LinearHashingStats LinearHashing::GetStats() {
 /* private methods
  * ----------------------------------------------------------------------------------
  */
+
+/*
+ * Gets the corresponding bucket of the value that we pass in.
+ */
 int LinearHashing::get_bucket_idx(int x) const {
     int bucket_idx = split_factor?
             x % (this->mod_factor * (split_factor * 2) ) :
@@ -121,7 +150,9 @@ int LinearHashing::get_bucket_idx(int x) const {
     return bucket_idx;
 }
 
-
+/*
+ * Updtes the state of some of the class variables. Also updates the buckets states.
+ */
 void LinearHashing::update_state() {
     if (this->mod_factor * 2 == this->Buckets.size()) {
         this->mod_factor *= 2;
@@ -132,7 +163,9 @@ void LinearHashing::update_state() {
     update_bucket_state();
 }
 
-
+/*
+ * updates the count of some class variables we use to keep tabs on the buckets.
+ */
 void LinearHashing::update_bucket_state() {
     this->LHStats._OverflowBuckets = 0;
     for (auto bucket : this->Buckets) {
@@ -144,7 +177,10 @@ void LinearHashing::update_bucket_state() {
 }
 
 
-
+/*
+ * prints binary value of the number pass, as well as the considers whther the value is split so that it can add an
+ * extra zero for padding.
+ */
 void LinearHashing::print_bin(std::ostream& os, int idx, bool is_split) {
     std::vector<bool> bool_arr;
 
@@ -166,7 +202,9 @@ void LinearHashing::print_bin(std::ostream& os, int idx, bool is_split) {
 
 }
 
-
+/*
+ * actually does the split
+ */
 void LinearHashing::do_split() {
     if (!this->split_factor) {       // set split flag to 1
         this->split_factor = 1;
@@ -202,6 +240,14 @@ void LinearHashing::do_split() {
     this->next_split++;
 }
 
+
+
+
+/* Splitting Functions
+ * --------------------------------------------------------
+ * splitting functions all do about the same thing and call the main split function based on the criteria of the
+ * policy provided in the constructor...
+ */
 
 bool LinearHashing::split0(int bucket_idx) {
     auto curr_bucket = this->Buckets[bucket_idx];    // current bucket that we inserted into

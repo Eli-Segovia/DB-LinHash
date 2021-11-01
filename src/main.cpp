@@ -1,8 +1,8 @@
 #include <iostream>
-#include "../lib/LinearHashing/LinearHashing.h"
+#include "../lib/LinearHashing/lh.h"
 
 int main () {
-        LinearHashing lh(5, 1);
+        lh lh(5, 1);
 
         for(int i = 0; i < 16; i++) {
             lh.Insert(rand() % 1000000 + 1);

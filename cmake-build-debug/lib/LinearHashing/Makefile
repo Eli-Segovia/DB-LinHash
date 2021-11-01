@@ -182,33 +182,6 @@ LinearHashing/fast:
 	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/build
 .PHONY : LinearHashing/fast
 
-LinearHashing.o: LinearHashing.cpp.o
-
-.PHONY : LinearHashing.o
-
-# target to build an object file
-LinearHashing.cpp.o:
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashing.cpp.o
-.PHONY : LinearHashing.cpp.o
-
-LinearHashing.i: LinearHashing.cpp.i
-
-.PHONY : LinearHashing.i
-
-# target to preprocess a source file
-LinearHashing.cpp.i:
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashing.cpp.i
-.PHONY : LinearHashing.cpp.i
-
-LinearHashing.s: LinearHashing.cpp.s
-
-.PHONY : LinearHashing.s
-
-# target to generate assembly for a file
-LinearHashing.cpp.s:
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashing.cpp.s
-.PHONY : LinearHashing.cpp.s
-
 LinearHashingStats.o: LinearHashingStats.cpp.o
 
 .PHONY : LinearHashingStats.o
@@ -236,6 +209,33 @@ LinearHashingStats.cpp.s:
 	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.s
 .PHONY : LinearHashingStats.cpp.s
 
+lh.o: lh.cpp.o
+
+.PHONY : lh.o
+
+# target to build an object file
+lh.cpp.o:
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/lh.cpp.o
+.PHONY : lh.cpp.o
+
+lh.i: lh.cpp.i
+
+.PHONY : lh.i
+
+# target to preprocess a source file
+lh.cpp.i:
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/lh.cpp.i
+.PHONY : lh.cpp.i
+
+lh.s: lh.cpp.s
+
+.PHONY : lh.s
+
+# target to generate assembly for a file
+lh.cpp.s:
+	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug && $(MAKE) -f lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make lib/LinearHashing/CMakeFiles/LinearHashing.dir/lh.cpp.s
+.PHONY : lh.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,12 +250,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... LinearHashing.o"
-	@echo "... LinearHashing.i"
-	@echo "... LinearHashing.s"
 	@echo "... LinearHashingStats.o"
 	@echo "... LinearHashingStats.i"
 	@echo "... LinearHashingStats.s"
+	@echo "... lh.o"
+	@echo "... lh.i"
+	@echo "... lh.s"
 .PHONY : help
 
 

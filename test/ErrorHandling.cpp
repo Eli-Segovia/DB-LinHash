@@ -2,7 +2,7 @@
 // Created by Eli Segovia on 11/1/21.
 //
 #include <gtest/gtest.h>
-#include "../lib/LinearHashing/LinearHashing.h"
+#include "../lib/LinearHashing/lh.h"
 
 TEST(ErrorHandling, Negative_Page_Size ) {
     EXPECT_THROW({

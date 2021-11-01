@@ -1,6 +1,6 @@
 add_library(LinearHashing
-        LinearHashing.cpp
-        LinearHashing.h
+        lh.cpp
+        lh.h
         LinearHashingStats.cpp
         LinearHashingStats.h)
 
