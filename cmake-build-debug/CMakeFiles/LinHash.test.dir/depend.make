@@ -21,8 +21,8 @@ CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../googletest/googletest/includ
 CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-port.h
 CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-type-util.h
-CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../lib/LinearHashing/LinearHashing.h
 CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../lib/LinearHashing/LinearHashingStats.h
+CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../lib/LinearHashing/lh.h
 CMakeFiles/LinHash.test.dir/test/Counting.cpp.o: ../test/Counting.cpp
 
 CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../googletest/googletest/include/gtest/gtest-death-test.h
@@ -45,7 +45,7 @@ CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../googletest/googletest/i
 CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-port.h
 CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-type-util.h
-CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../lib/LinearHashing/LinearHashing.h
 CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../lib/LinearHashing/LinearHashingStats.h
+CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../lib/LinearHashing/lh.h
 CMakeFiles/LinHash.test.dir/test/ErrorHandling.cpp.o: ../test/ErrorHandling.cpp
 

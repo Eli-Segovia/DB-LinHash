@@ -70,32 +70,17 @@ lib/LinearHashing/CMakeFiles/LinearHashing.dir/lh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearHashing.dir/lh.cpp.s"
 	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/lh.cpp -o CMakeFiles/LinearHashing.dir/lh.cpp.s
 
-lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o: lib/LinearHashing/CMakeFiles/LinearHashing.dir/flags.make
-lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o: ../lib/LinearHashing/LinearHashingStats.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o"
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o -c /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp
-
-lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.i"
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp > CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.i
-
-lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.s"
-	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.cpp -o CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.s
-
 # Object files for target LinearHashing
 LinearHashing_OBJECTS = \
-"CMakeFiles/LinearHashing.dir/lh.cpp.o" \
-"CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o"
+"CMakeFiles/LinearHashing.dir/lh.cpp.o"
 
 # External object files for target LinearHashing
 LinearHashing_EXTERNAL_OBJECTS =
 
 lib/LinearHashing/libLinearHashing.a: lib/LinearHashing/CMakeFiles/LinearHashing.dir/lh.cpp.o
-lib/LinearHashing/libLinearHashing.a: lib/LinearHashing/CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o
 lib/LinearHashing/libLinearHashing.a: lib/LinearHashing/CMakeFiles/LinearHashing.dir/build.make
 lib/LinearHashing/libLinearHashing.a: lib/LinearHashing/CMakeFiles/LinearHashing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libLinearHashing.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libLinearHashing.a"
 	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing && $(CMAKE_COMMAND) -P CMakeFiles/LinearHashing.dir/cmake_clean_target.cmake
 	cd /home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/cmake-build-debug/lib/LinearHashing && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LinearHashing.dir/link.txt --verbose=$(VERBOSE)
 

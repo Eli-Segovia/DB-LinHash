@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LinearHashing.dir/LinearHashingStats.cpp.o"
   "CMakeFiles/LinearHashing.dir/lh.cpp.o"
   "libLinearHashing.a"
   "libLinearHashing.pdb"

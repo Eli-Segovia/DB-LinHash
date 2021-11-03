@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.cpp
-LinearHashing.h
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.h
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/lh.cpp
+lh.h
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/lh.h
 
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashing.h
+/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/lh.h
 ostream
 -
 vector
@@ -25,8 +25,4 @@ exception
 -
 string
 -
-LinearHashingStats.h
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.h
-
-/home/osboxes/Documents/School_Stuff/File_DB/DB-LinHash/lib/LinearHashing/LinearHashingStats.h
 
