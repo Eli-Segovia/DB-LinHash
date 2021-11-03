@@ -346,10 +346,10 @@ bool LinearHashing::split0(int bucket_idx) {
 
 bool LinearHashing::split1(int bucket_idx) {
 
-    if (this->LHStats.OverflowBuckets() != 0 &&  this->LHStats.OverflowBuckets() >= this->maxoverflow) {    // if overflow buckets exceeds provided value, split
+    // if overflow buckets exceeds provided value, split
+    if (this->LHStats.OverflowBuckets() != 0 &&  this->LHStats.OverflowBuckets() >= this->maxoverflow) {
         do_split();
     }
-
     return this->split_flag;
 }
 
